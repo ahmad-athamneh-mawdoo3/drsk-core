@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('test', 'mawdoo3\drsk\core\Controllers\SearchController@testRoute')->name('asasdasad');
+Route::get('test.core', 'mawdoo3\drsk\core\Controllers\SearchController@testRoute')->name('asasdasad');
 Route::prefix('search')->namespace('mawdoo3\drsk\core\Controllers')->group(function () {
     Route::get('/saved', 'SearchController@savedResults')->name('savedResults');
     Route::get('/{searchWord?}', 'SearchController@search')->name('searchIndex');
