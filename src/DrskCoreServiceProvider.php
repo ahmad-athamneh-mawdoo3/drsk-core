@@ -1,8 +1,8 @@
 <?php
-namespace mawdoo3\drsk\core;
+namespace Mawdoo3\Drsk\Core;
 
 use Illuminate\Support\ServiceProvider;
-use mawdoo3\drsk\core\CoreInstall;
+use Mawdoo3\Drsk\Core\CoreInstall;
 
 class DrskCoreServiceProvider extends ServiceProvider
 {

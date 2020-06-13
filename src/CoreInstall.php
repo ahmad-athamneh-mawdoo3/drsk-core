@@ -1,5 +1,5 @@
 <?php
-namespace mawdoo3\drsk\core;
+namespace Mawdoo3\Drsk\Core;
 
 use Illuminate\Console\Command;
 
@@ -36,7 +36,7 @@ class CoreInstall extends Command
      */
     public function handle()
     {
-        exec("php artisan vendor:publish --provider='mawdoo3\drsk\core\DrskCoreServiceProvider'");
+        exec("php artisan vendor:publish --provider='Mawdoo3\Drsk\Core\DrskCoreServiceProvider'");
         $this->line("<info>Publishing:</info> Publishing Configration Done");
         exec("php artisan migrate --path=/database/migrations/CoreInstall");
         $this->line("<info>Migrating:</info> Migrating to DB Done");
